@@ -6,3 +6,70 @@ Copyright (C) 2018 by Raymond E. Marcil <marcilr@gmail.com>
 Installation of grism on Debian 9.4 amd64
 
 
+Dependencies:
+
+Have:
+$ ruby --version
+ruby 2.3.3p222 (2016-11-21) [x86_64-linux-gnu]
+
+Ouch looks like am running way to recent a version of ruby.
+Grism wants ruby 1.8
+
+
+1. Get grism_0.9.0-1_all.deb from:
+https://sourceforge.net/projects/grism/files/grism/0.9.0/
+https://sourceforge.net/projects/grism/files/grism/0.9.0/grism_0.9.0-1_all.deb/download
+
+
+2. Install grism dependencies:
+# aptitude install ruby libcairo2
+
+NOTE: The following were not found on Debian 9.4 amd64:
+      libglade2-ruby
+      libgtk2-ruby
+
+3. Install grism deb:
+# dpkg -i grism_0.9.0-1_all.deb
+Selecting previously unselected package grism.
+(Reading database ... 274189 files and directories currently installed.)
+Preparing to unpack grism_0.9.0-1_all.deb ...
+Unpacking grism (0.9.0-1) ...
+dpkg: dependency problems prevent configuration of grism:
+ grism depends on ruby1.8; however:
+  Package ruby1.8 is not installed.
+ grism depends on libgtk2-ruby (>= 0.14); however:
+  Package libgtk2-ruby is not installed.
+ grism depends on libglade2-ruby (>= 0.14); however:
+  Package libglade2-ruby is not installed.
+
+dpkg: error processing package grism (--install):
+ dependency problems - leaving unconfigured
+Processing triggers for man-db (2.7.6.1-2) ...
+Processing triggers for desktop-file-utils (0.23-1) ...
+Processing triggers for mime-support (3.60) ...
+Processing triggers for gnome-menus (3.13.3-9) ...
+Errors were encountered while processing:
+ grism
+#
+
+
+Filelist
+========
+grism_0.9.0-1_all.deb
+  Grism - A stock market observation tool
+  Brought to you by: nickrahn
+  https://sourceforge.net/projects/grism/files/grism/0.9.0/
+  https://sourceforge.net/projects/grism/files/grism/0.9.0/grism_0.9.0-1_all.deb/download
+
+grism-0.9.0.tar.gz 
+  Grism - A stock market observation tool
+  Brought to you by: nickrahn
+  https://sourceforge.net/projects/grism/files/grism/0.9.0/
+  https://sourceforge.net/projects/grism/files/grism/0.9.0/grism-0.9.0.tar.gz/download
+
+
+Links
+=====
+How to Install Grism (stock market analysis app) in Ubuntu 11.04 Natty Narwhal?
+http://mygeekopinions.blogspot.com/2011/07/how-to-install-grism-stock-market.html
+
