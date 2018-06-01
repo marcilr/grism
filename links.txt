@@ -1,0 +1,17 @@
+links.txt
+Created Thu May 31 16:11:06 AKDT 2018
+Copyright (C) 2018 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Grism related links
+
+
+Links
+=====
+Grism - A stock market observation tool
+https://sourceforge.net/p/grism/wiki/Home/
+
+How to Install Grism (stock market analysis app) in Ubuntu 11.04 Natty Narwhal
+http://mygeekopinions.blogspot.com/2011/07/how-to-install-grism-stock-market.html
+
+
